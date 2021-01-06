@@ -3,3 +3,15 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+.star-container {
+
+}
+
+.star-rating-filled {
+  fill: gold;
+}
+
+.star-rating-blank {
+  fill: rgb(137, 137, 137);
+}
