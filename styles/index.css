@@ -15,3 +15,24 @@
 .star-rating-blank {
   fill: rgb(137, 137, 137);
 }
+
+.navbar {
+  margin-bottom: 1rem;
+}
+
+.navbar a {
+  font-weight: bold;
+}
+
+.navbar li:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* direct decendant selector */
+.navbar-brand > img { 
+  display: inline-block;
+  width: 20px;
+  border-radius: 2px;
+}

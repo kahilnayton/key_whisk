@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { RichText } from 'prismic-reactjs'
-import Avatar from '../components/avatar'
-import Date from '../components/date'
+import Avatar from './avatar'
+import Date from './date'
 import CoverImage from './cover-image'
 
 export default function PostPreview({
