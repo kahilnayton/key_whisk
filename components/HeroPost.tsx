@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import { RichText } from 'prismic-reactjs'
-import Avatar from './avatar'
-import Date from './date'
-import CoverImage from './cover-image'
+import Link from "next/link";
+import { RichText } from "prismic-reactjs";
+import Avatar from "./Avatar";
+import Date from "./Date";
+import CoverImage from "./CoverImage";
 
 export default function HeroPost({
   title,
@@ -40,5 +40,5 @@ export default function HeroPost({
         </div>
       </div>
     </section>
-  )
+  );
 }

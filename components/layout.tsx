@@ -1,16 +1,16 @@
-import Alert from './alert'
-import Footer from './footer'
-import Meta from './meta'
+import Footer from "./Footer";
+import Nav from "../components/Nav";
+import Header from '../components/Header'
 
 export default function Layout({ preview, children }) {
   return (
     <>
-      <Meta />
+      <Nav />
+      <Header />
       <div className="min-h-screen">
-        <Alert preview={preview} />
         <main>{children}</main>
       </div>
       <Footer />
     </>
-  )
+  );
 }

@@ -1,7 +1,13 @@
-import '../styles/index.css'
+
+import "../styles/index.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  console.log(pageProps);
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
