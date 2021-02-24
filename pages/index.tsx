@@ -18,6 +18,7 @@ export default function Index({ preview, allHomepage }) {
         <meta name="keywords" content="whiskey, ratings" />
       </Head>
       <Container>
+        <h1>Hello world</h1>
         <Intro />
         {heroPost && (
           <HeroPost
