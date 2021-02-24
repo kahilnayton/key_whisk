@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { RichText } from "prismic-reactjs";
-import Avatar from "./Avatar";
+// import Avatar from "./Avatar";
 import Date from "./Date";
 import CoverImage from "./CoverImage";
 
@@ -36,7 +36,7 @@ export default function HeroPost({
         </div>
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          {author && <Avatar name={author.name} picture={author.picture} />}
+          {/* {author && <Avatar name={author.name} picture={author.picture} />} */}
         </div>
       </div>
     </section>
