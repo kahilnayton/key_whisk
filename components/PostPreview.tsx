@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { RichText } from 'prismic-reactjs'
-// import Avatar from './Avatar'
+import Avatar from './Avatar'
 import Date from './Date'
 import CoverImage from './CoverImage'
 
@@ -32,7 +32,7 @@ export default function PostPreview({
         <Date dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      {/* <Avatar name={author.name} picture={author.picture} /> */}
+      <Avatar name={author.name} picture={author.picture} />
     </div>
   )
 }

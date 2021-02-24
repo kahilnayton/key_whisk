@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
       <Link href="/">
-        <a className="text-blue-300">KeyWhisk</a>
+        <a className="text-blue-300">Key Whisk</a>
       </Link>
       .
     </div>

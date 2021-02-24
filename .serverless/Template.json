@@ -1,5 +1,5 @@
 {
   "components": {
-    "keyWhisk": "/Users/Kahil/.serverless/components/registry/npm/@sls-next/serverless-component@1.18.0/node_modules/@sls-next/serverless-component"
+    "keywhisk": "/Users/Kahil/.serverless/components/registry/npm/@sls-next/serverless-component@1.18.0/node_modules/@sls-next/serverless-component"
   }
 }

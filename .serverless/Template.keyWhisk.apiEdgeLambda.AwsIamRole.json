@@ -2,8 +2,8 @@
   "name": "ymsgh5n-lcrruk",
   "arn": "arn:aws:iam::832959610959:role/ymsgh5n-lcrruk",
   "service": [
-    "lambda.amazonaws.com",
-    "edgelambda.amazonaws.com"
+    "edgelambda.amazonaws.com",
+    "lambda.amazonaws.com"
   ],
   "policy": {
     "Version": "2012-10-17",
@@ -19,7 +19,7 @@
       },
       {
         "Effect": "Allow",
-        "Resource": "arn:aws:s3:::ymsgh5n-aqmjk95/*",
+        "Resource": "arn:aws:s3:::ymsgh5n-wst65tm/*",
         "Action": [
           "s3:GetObject",
           "s3:PutObject"
