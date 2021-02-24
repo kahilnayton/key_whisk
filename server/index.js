@@ -1,7 +1,10 @@
 const express = require("express");
-var request = require("request");
-
 const app = express();
+const request = require("request");
+const http = require("http");
+const config = require("./config");
+const PORT = config.PORT;
+console.log(config);
 
 app.get("/", function (req, res) {
   res.send("hello world");
@@ -9,17 +12,16 @@ app.get("/", function (req, res) {
 
 const axios = require("axios");
 
-const token = "1432ef6f27d007234dd11a81cee32630044a023d";
-
-app.get("/post", function (req, res) {
-  var headers = {
+app.get("/trigger", function (req, res) {
+  const headers = {
     Accept: "application/vnd.github.everest-preview+json",
-    Authorization: "token 1432ef6f27d007234dd11a81cee32630044a023d",
+    Authorization: `token ${config.GITHUB_TOKEN}`,
+    'User-agent': 'node.js'
   };
 
-  var dataString = '{"event_type": my_bash_script"}';
+  const dataString = '{"event_type": "my_custom_webhook"}';
 
-  var options = {
+  const options = {
     url: "https://api.github.com/repos/kahilnayton/key_whisk/dispatches",
     method: "POST",
     headers: headers,
@@ -27,9 +29,14 @@ app.get("/post", function (req, res) {
   };
 
   function callback(error, response, body) {
-    console.log('hi')
+    console.log("test");
     if (!error && response.statusCode == 200) {
       console.log(body);
+    }
+    if (error) {
+      console.log(error);
+    } else {
+      console.log(response);
     }
   }
 
@@ -38,4 +45,8 @@ app.get("/post", function (req, res) {
   res.send("done");
 });
 
-app.listen(5000);
+const server = http.createServer(app);
+
+server.listen(PORT, () => {
+  console.warn(`Server is running on ${PORT}`);
+});
